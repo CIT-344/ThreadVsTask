@@ -40,7 +40,7 @@ namespace ThreadVsTaskExample
             return Task.Factory.StartNew(() => {
                 // I que a new thread from the thread pool and start it when it's available
                 GetThreadID(id);
-            },TaskCreationOptions.LongRunning);
+            });
         }
 
         static void GetThreadID(int id)
